@@ -22,6 +22,7 @@ router.post('/', auth, (req, res) => {
     name: req.body.name
   });
 
+  // save item to database
   newItem.save().then(item => res.json(item));
 });
 
