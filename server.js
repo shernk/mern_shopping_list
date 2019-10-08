@@ -1,14 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-const config = require("config");
+// const config = require("config");
 const app = express();
 
 // Bodyparser Middleware
 app.use(express.json());
 
 // DB Config
-const db = config.get("mongoURI");
+const db =
+  "mongodb+srv://sherk:sherk123@cluster0-rd0de.mongodb.net/test?retryWrites=true&w=majority";
 
 // Connect to Mongo
 mongoose
